@@ -8336,10 +8336,10 @@
 "Yuuma.HotelReaction.Concert": "Yesterday was... Quite nice.#$e#I think everyone enjoyed Miss Alissa's performance...#$b#I liked it.$h",
 "Alissa.HotelReaction.Concert": "Hey @!$h#$b#Yesterday was EXHILERATING! Everybody was dancing to my singing!$l#$e#I really hope you enjoyed it...$l",
 "Olga.HotelReaction.Concert": "My niece really brought in some people yesterday.$h#$b#She's bringing pride to the family!$h",
-"Bert.HotelReaction.Concert": "Did you ",
+"Bert.HotelReaction.Concert": "Did you see my neice yesterday?#$b#She was great! She made us so proud!$h#$e#Guess good genes run in our family!$h",
 
 //Randomized Tourist Dialogue
-"Tourist.Dialogue.1": "placeholder",
+"Tourist.Dialogue.1": "Ridgeside village is beautiful!",
 "Tourist.Dialogue.2": "placeholder",
 "Tourist.Dialogue.3": "placeholder",
 "Tourist.Dialogue.4": "placeholder",
