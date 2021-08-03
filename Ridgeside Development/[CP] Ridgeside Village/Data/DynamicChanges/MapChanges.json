@@ -118,14 +118,14 @@
 				"Position": { "X": 69, "Y": 15 },
 				"Layer": "Buildings",
 				"SetProperties": {
-				"Action": "Warp 4 11 Custom_Ridgeside_RSVMinecart"
+				"Action": "RSVMinecart2"
                }
             },
 			{
 				"Position": { "X": 16, "Y": 81 },
 				"Layer": "Buildings",
 				"SetProperties": {
-				"Action": "Warp 4 13 Custom_Ridgeside_RSVMinecart"
+				"Action": "RSVMinecart3"
                }
             }
 		],
@@ -140,7 +140,7 @@
 				"Position": { "X": 25, "Y": 17 },
 				"Layer": "Buildings",
 				"SetProperties": {
-				"Action": "Warp 24 13 Custom_Ridgeside_RSVMinecart"
+				"Action": "RSVMinecart1"
                }
             }
 		],
@@ -155,17 +155,6 @@
 		"ToArea": { "X": 68, "Y": 18, "Width": 3, "Height": 2 },
 		"PatchMode": "Replace",
 		"When": { "HasSeenEvent: hostPlayer": 75160189 },
-		"Update": "OnLocationChange, OnTimeChange"
-	},
-
-	//Opened RidgeForest Entrance 
-	{
-		"Action": "EditMap",
-		"Target": "Maps/Custom_Ridgeside_Ridge",
-		"FromFile": "Assets/Maps/EventMaps/RidgeOpen.tmx",
-		"ToArea": { "X": 26, "Y": 15, "Width": 2, "Height": 2 },
-		"PatchMode": "Replace",
-		"When": { "HasSeenEvent: hostPlayer": 75160188 },
 		"Update": "OnLocationChange, OnTimeChange"
 	},
 
@@ -197,6 +186,7 @@
          "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 2 },
          "ToArea": { "X": 6, "Y": 13, "Width": 1, "Height": 2 },
          "PatchMode": "Replace",
+         "Update": "OnLocationChange, OnTimeChange",
          "When": {
 			"HasSeenEvent: hostPlayer |contains=75160105": true,
 		}         
@@ -208,6 +198,7 @@
          "FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 2 },
          "ToArea": { "X": 10, "Y": 5, "Width": 2, "Height": 2 },
          "PatchMode": "Replace",
+         "Update": "OnLocationChange, OnTimeChange",
          "When": {
 			"HasSeenEvent: hostPlayer |contains=75160187": true,
 		}         
@@ -238,6 +229,34 @@
              "Year": "2",
              "Time": "{{Range: 2000, 2600}}",
       	}
-      	}, 	      	      	      	       	
+      	},
+
+//Hotel Room
+	{
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Ridgeside_LogCabinHotel2ndFloor",
+        "FromFile": "Assets/Maps/DynamicMaps/RSVBedTile.tmx",
+        "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 2 },
+        "ToArea": { "X": 4, "Y": 21, "Width": 1, "Height": 2 },
+		"When": { "HasFlag": "RSV.HotelRoomBooked" },
+		"Update": "OnLocationChange"
+    },
+//Hotel Expansion after Naomi's introduction
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_LogCabinHotelLobby",
+		"FromFile": "Assets/Maps/EventMaps/LogCabinHotelLobbyExpanded.tmx",
+		"FromArea": { "X": 0, "Y": 0, "Width": 46, "Height": 18 },
+		"ToArea": { "X": 0, "Y": 0, "Width": 46, "Height": 18 },
+		"When": { "Year |contains=1": false },
+		"Update": "OnLocationChange"
+	},
+//Spouse Picture during wedding reception
+	{
+		"Action": "EditImage",
+		"Target": "Maps/z_RSVspousePic",
+		"FromFile": "{{FirstValidFile: Assets/WeddingReception/NPCs/{{spouse}}.png, Assets/WeddingReception/z_RSVspousePic.png }}",
+		"Update": "OnLocationChange, OnTimeChange",
+	},     	      	       	
 ]
 }
