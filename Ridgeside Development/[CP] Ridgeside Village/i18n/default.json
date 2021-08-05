@@ -8320,7 +8320,7 @@
 "Flor.HotelReaction.Concert": "Alissa has a wonderful voice.$l#$e#She definitely resembles the Luscinia Megarhynchos.$h#$b#Oh, that's the scientific term for Nightingale. *giggles*$h",
 "Naomi.HotelReaction.Concert": "placeholder",
 "Ian.HotelReaction.Concert": "Hello there @.$h#$e#Did you enjoy the concert yesterday?#$b#I had fun helping Miss Lenny and Kenneth with the preparations.$h#$b#I hope you liked it!$l",
-"Malaya.HotelReaction.Concert": "placeholder",
+"Malaya.HotelReaction.Concert": "Did you see my daughter yesterday?$h#$e#She really brought in all that people to the village!$6#$b#I'm so proud of her!$h",
 
 //Authorities
 "Lenny.HotelReaction.Concert": "Miss Liden has such a soulful voice, doesn't she?$h#$b#I'm glad she was able to overcome her shyness.$h",
@@ -8339,15 +8339,15 @@
 "Bert.HotelReaction.Concert": "Did you see my neice yesterday?#$b#She was great! She made us so proud!$h#$e#Guess good genes run in our family!$h",
 
 //Randomized Tourist Dialogue
-"Tourist.Dialogue.1": "Ridgeside village is beautiful!",
-"Tourist.Dialogue.2": "placeholder",
-"Tourist.Dialogue.3": "placeholder",
-"Tourist.Dialogue.4": "placeholder",
-"Tourist.Dialogue.5": "placeholder",
-"Tourist.Dialogue.6": "placeholder",
-"Tourist.Dialogue.7": "placeholder",
-"Tourist.Dialogue.8": "placeholder",
-"Tourist.Dialogue.9": "placeholder",
+"Tourist.Dialogue.1": "Ridgeside village is beautiful!#$b#Their surroundings are so picturesque and clean.",
+"Tourist.Dialogue.2": "Try visiting the Log Cabin Hotel.#$b#I had a wonderful night there.",
+"Tourist.Dialogue.3": "Oh my! I'm looking forward to book my birthday at the Cabin!#$b#You'll come wouldn't you?",
+"Tourist.Dialogue.4": "Hmm, I'm hungry.#$b#Where do you suppose I could get a bite to eat?",
+"Tourist.Dialogue.5": "That cable car ride was EXCITING!#$b#And ehem, very convenient.",
+"Tourist.Dialogue.6": "I wonder what lies beyond the Ridge...",
+"Tourist.Dialogue.7": "I like the weather up here because it's colder.",
+"Tourist.Dialogue.8": "Miss Lenny is very accommodating.#$b#She gave me a tour of the sights the first time I went here!",
+"Tourist.Dialogue.9": "",
 "Tourist.Dialogue.10": "placeholder",
 "Tourist.Dialogue.11": "placeholder",
 "Tourist.Dialogue.12": "placeholder",
